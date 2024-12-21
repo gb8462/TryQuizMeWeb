@@ -7,7 +7,7 @@ Notes:
 2. git branch -M main
 3. git push -u origin main
 
-### In a Scenario where your just starting git on terminal do the Instructions below(You need to have an empty repository)
+### In a Scenario where your just starting git on terminal do the Instructions below (You need to have an empty repository)
 
 Basic Git Commands:
 
@@ -34,18 +34,13 @@ Basic Git Commands:
 
 ### In a Scenario where someone or you updated a single file or edited something directly on GitHub, There would be an Error when your trying to commit a file, this is because your local files only have the previous updated commit. 
 
-
-### Don't be to surprise though and start panicking, Simply Use the git pull command in order to pull *(Meaning: grab/pull the recently updated commit on GitHub)*
+Don't be to surprise though and start panicking, Simply Use the git pull command in order to To pull the recently updated commit on GitHub.
 
 1. git pull 
 OR
-2. git pull origin main 
+2. git pull origin main (depends which branch your trying to pull)
 
-**I think the second one can be change to :**
-- *git pull origin master* 
-If you made your branch "master" instead of "main"
-
-### If you want to forcefully commit your file:
+### If you want to forcefully push your file:
 1. git push -u origin main --force
 
  *Note: this will force update your GitHub, new updates that aren't locally in your computer will be removed from GitHub*
