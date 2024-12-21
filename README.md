@@ -1,3 +1,3 @@
 ## Notes
 
-- **Just my notes cause why not**
+- **Just my notes nothing important**
