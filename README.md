@@ -1,1 +1,3 @@
-# Just some files containing programs I explained and wrote for an example of how things work
+## Notes
+
+- **Just my notes cause why not**
