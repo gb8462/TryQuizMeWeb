@@ -7,25 +7,27 @@ import random
 # para masaya wag ka mang daya~
 
 def clean():
-    os.system("cls")
+    os.system("clear")
 
 def game():
     attempt = 0
     chances = 10
     
     print("Hallooooo :3")
-    print("\nGuessing Name Game")
+    print("Guessing Name Game\n")
 
-    number_to_guess = random.randrange(30)
+    number_to_guess = random.randrange(1000)
     
     while attempt < chances:
 
         attempt += 1
-        usr = int(input('Please Enter your Guess (0-30) : '))
+        usr = int(input('Please Enter your Guess (0-1000) : '))
         clean()
         if usr == number_to_guess:
             print(f'The number is {number_to_guess} and you found it right !! in the {attempt} attempt')
-            decode()
+            decoding = "Q29uZ3JhdHMhIEdhbGluZyBOYW1hbn4sIENhcmxvcyBuZ2EgcGFsYSBIQUhBSEFIQUhB"
+            decoded_data = base64.b64decode(decoding.encode('utf-8')).decode('utf-8')
+            print(f"{decoded_data}")
             break
         elif attempt >= chances and usr != number_to_guess:
             print(f'Oops sorry, The number is {number_to_guess} better luck next time')
@@ -35,11 +37,5 @@ def game():
             print('Your Number is Less')
         else:
             print("Invalid Input~!")
-
-def decode():
-    decoding = "Q29uZ3JhdHMhIEdhbGluZyBOYW1hbn4sIENhcmxvcyBuZ2EgcGFsYSBIQUhBSEFIQUhB"
-    clean()
-    decoded_data = base64.b64decode(decoding.encode('utf-8')).decode('utf-8')
-    print(f"Congratulations!: \n{decoded_data}")
 
 game()
