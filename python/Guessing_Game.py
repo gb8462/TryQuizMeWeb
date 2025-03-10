@@ -2,10 +2,6 @@ import os
 import base64
 import random
 
-# Guessing Game Made by yours Truly.
-# my name is Encoded run the code and play to know :3
-# para masaya wag ka mang daya~
-
 def clean():
     os.system("clear")
 
