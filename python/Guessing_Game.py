@@ -14,7 +14,7 @@ def game():
     chances = 10
     
     print("Hallooooo :3")
-    print("Guessing Name Game\n")
+    print("Guessing Game\n")
 
     number_to_guess = random.randrange(1000)
     
@@ -25,7 +25,7 @@ def game():
         clean()
         if usr == number_to_guess:
             print(f'The number is {number_to_guess} and you found it right !! in the {attempt} attempt')
-            decoding = "Q29uZ3JhdHMhIEdhbGluZyBOYW1hbn4sIENhcmxvcyBuZ2EgcGFsYSBIQUhBSEFIQUhB"
+            decoding = "Q29uZ3JhdHMgc2EgcGFnIGRlY29kZSBiaWd5YW4ga2l0YSBwaXNvIHNhIHNjaG9vbCBidWthc34="
             decoded_data = base64.b64decode(decoding.encode('utf-8')).decode('utf-8')
             print(f"{decoded_data}")
             break
