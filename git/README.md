@@ -1,4 +1,5 @@
-# Git Notes
+# Git
+_(to be rewritten)_
 
 Notes:
 
