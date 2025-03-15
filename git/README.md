@@ -1,5 +1,4 @@
-# Git
-_(to be rewritten)_
+# Git _(To Be Continued Soon)_
 
 Notes:
 
