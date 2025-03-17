@@ -6,4 +6,4 @@
 - Caesar Cypher
 - Guessing Game
 
-More projects to be build soon...
+_More projects to be build soon..._
