@@ -1,4 +1,4 @@
-# Git _(To Be Continued Soon)_
+# Git
 
 Notes:
 
