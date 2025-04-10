@@ -1,46 +1,72 @@
-# Git/GitHub
 
-Notes:
+## GitHub:
+**1. Fork The Repository:**
 
-### In a Scenario where you want to push to an existing repository:
-1. git remote add origin "Link To your Github Repo"
-2. git branch -M main
-3. git push -u origin main
+   ![fork](https://github.com/user-attachments/assets/65c0ed44-e85c-4fe5-a0a8-eecd25daead1)
+   - After clicking fork click the "create fork" button at the bottom right corner.
+   - Next you will be sent to your forked repository,if you view your own repo you will be able to see "ITCS103_Finals" in your repository:
+     ![image](https://github.com/user-attachments/assets/cf746528-1890-449d-b361-9e111111fd10)
+___
 
-### In a Scenario where your just starting git on terminal do the Instructions below (You need to have an empty repository)
+**2. Clone The Repository:**
 
-Basic Git Commands:
+   ![image](https://github.com/user-attachments/assets/db921b1e-bc9a-475d-8e33-4f738927c3f8)
+   - Click code then copy the web URL.
+   - Once that is done on your terminal type:
+     ```clone
+     git clone yourlink.git
+     ```
+   - In this example replace "yourlink.git" with the web URL that you copied.
+     ![image](https://github.com/user-attachments/assets/f772dfbf-df69-4ff5-98e2-e0427655cbec)
+   - Once that is done you will be able to see the repository in your local device
+     ![image](https://github.com/user-attachments/assets/0599c411-bb96-4967-84f2-e9098adc9604)
+   - Then just open the repository with any text editor you want.
 
-1. git config user.email "YourEmail@gmail.com"
+___
 
-2. git init
+## Git:
 
-3. git branch -M main
+Assuming you want to push your changes to your forked repository:
+  
+   1. git add . <br>
+   ![Screenshot 2025-04-07 155050](https://github.com/user-attachments/assets/27431651-c5be-4394-88cc-87ba8e7d3b0c)
 
-4. git remote add origin "Link to your empty git repository"
+   3. git commit -m 'your message here' (any message basta may quotation)
+      ![Screenshot 2025-04-07 155057](https://github.com/user-attachments/assets/1b74b793-d135-4a76-b20a-a4c3389da211)
 
-5. git add .
+   4. git push -u origin main <br>
+     ![Screenshot 2025-04-07 155105](https://github.com/user-attachments/assets/3e0c5546-bd3f-4131-bae9-72f4b11b119d)
 
-6. git commit -m "Enter What you want"
+___
 
-7.  git push -u origin main
-### After Completing this and successfully uploading your file directly to GitHub you can just do the Following below afterwards when adding new commits
+## Creating a Pull Request:
 
-1. git add .
+Assuming you want to submit your push changes to your forked repository:
 
-2. git commit -m "*Enter whatever changes you did*"
+   1. Open a Pull Request
+      ![sample1](https://github.com/user-attachments/assets/62d817ad-5d9f-4155-92cd-1d5d906c242f)
+   
+   2. Add Title and description then click Create pull request
+      ![sample2](https://github.com/user-attachments/assets/cb97ca28-b51e-437d-ba3d-4ec560ad95f0)
 
-3. git push -u origin main
+___
 
-### In a Scenario where someone or you updated a single file or edited something directly on GitHub, There would be an Error when your trying to commit a file, this is because your local files only have the previous updated commit. 
+## Merging a Pull Request:
 
-Don't be to surprise though and start panicking, Simply Use the git pull command in order to To pull the recently updated commit on GitHub.
+Here's how to merge a pull request:
 
-1. git pull 
-OR
-2. git pull origin main (depends which branch your trying to pull)
+   1. Wait for it to load then click Merge Pull Request
+      ![sample3](https://github.com/user-attachments/assets/44e75da1-3258-45b3-8712-8a1694d642e4)
 
-### If you want to forcefully push your file:
-1. git push -u origin main --force
+   2. If it doesn't load, cancel the merging process
+   
+   3. Then reopen it and confirm merge
+      ![sample4](https://github.com/user-attachments/assets/5e313ccc-1f80-448b-8cdf-2f9dbd8e419f)
 
- *Note: this will force update your GitHub, new updates that aren't locally in your computer will be removed from GitHub*
+___
+
+## How to Sync Fork:
+
+If you want to update your forked repository:
+
+![image](https://github.com/user-attachments/assets/0f521332-772f-494a-8ee3-55599b423b8e)
